@@ -1,0 +1,17 @@
+<odoo>
+    <template id="portal_payment_form_inherit" inherit_id="payment.checkout">
+        <xpath expr="//div[@class='card']" position="inside">
+        <!-- <xpath expr="//input[@name='o_payment_save_as_token']" position="after"> -->
+            <!-- <div class="form-group"> -->
+                <!-- <label for="feedback">Feedback</label> -->
+                <select name="feedback" class="form-control" id="feedback">
+                    <option value="" selected="selected">Select Feedback</option>
+                    <option value="bad">Bad</option>
+                    <option value="satisfactory">Satisfactory</option>
+                    <option value="good">Good</option>
+                    <option value="excellent">Excellent</option>
+                </select>
+            <!-- </div> -->
+        </xpath>
+    </template>
+</odoo>
